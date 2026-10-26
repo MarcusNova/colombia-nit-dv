@@ -1,0 +1,45 @@
+{
+  "name": "@novadeveloper/nit-dv",
+  "version": "0.1.0",
+  "description": "Calcula, valida y formatea el dígito de verificación (DV) del NIT colombiano.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "nit-dv": "./bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "build": "npm pack"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "nit",
+    "dv",
+    "dian",
+    "colombia",
+    "rut",
+    "digito-verificacion"
+  ],
+  "license": "MIT",
+  "author": "jhonatan villanova jvillanova07@gmail.com",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusNova/colombia-nit-dv"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
